@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('validate'){
 			steps{
-			echo $JAVA_HOME
+			echo 'hello world'
 			}
 		}
 
