@@ -2,14 +2,14 @@ pipeline{
 	agent any
 	stages{
 		stage('build') {
-  steps {
-    sh 'mvn package'
-  }
+ 			 steps {
+  			  sh 'mvn package'
+ 			 }
 
-  tools {
-    maven 'mymvn'
-  }
+  			tools {
+ 			   maven 'mymvn'
+ 			 }
 }
 
-	}
+}
 }
