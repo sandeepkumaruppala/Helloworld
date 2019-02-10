@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('validate'){
 			steps{
-			mvn validate
+			echo $JAVA_HOME
 			}
 		}
 
