@@ -1,11 +1,15 @@
 pipeline{
 	agent any
 	stages{
-		stage('validate'){
-			steps{
-			sh 'mvn package'
-			}
-		}
+		stage('build') {
+  steps {
+    mvn package
+  }
+
+  tools {
+    maven 'mymvn'
+  }
+}
 
 	}
 }
