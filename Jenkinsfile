@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('validate'){
 			steps{
-			echo 'hello world'
+			mvn package
 			}
 		}
 
